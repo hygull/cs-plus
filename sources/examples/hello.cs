@@ -9,7 +9,7 @@ namespace WelcomeApplication
 {
 	class Hello
 	{
-		public static void Main(String[] cmdArgs)
+		public static void Main(string[] cmdArgs) //string is an alias in C# for System.String. So technically, there is no difference. It's like int vs. System.Int32.
 		{
 			Console.WriteLine("Hello C# programmers!!!");
 			Console.Write("Is it true that ");
