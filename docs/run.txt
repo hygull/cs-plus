@@ -1,0 +1,14 @@
+ /*Won't create hello.exe, but no error	*/
+admins-MacBook-Pro-3:source admin$ mcs hello.cs
+
+/*Won't create hello.exe, but no error	*/
+admins-MacBook-Pro-3:source admin$ mcs -out:hello.exe hello.cs  
+
+/*Correct	*/
+admins-MacBook-Pro-3:source admin$ mcs -out:hello hello.cs 
+admins-MacBook-Pro-3:source admin$ mono hello
+Hello C# programmers!!!admins-MacBook-Pro-3:source admin$ 
+
+
+/* Correct */
+admins-MacBook-Pro-3:source admin$ mcs -out:../mac-executables/hello hello.cs 
