@@ -8,11 +8,11 @@ using System;
 namespace ReadWriteApplication{
 	class ReadShow{
 		//Take input
-		static void ReadInput(){
+		static void ReadInput(){	//if void ReadInput()...002_read_and_display.cs(27,4): error CS0120: An object reference is required to access non-static member `ReadWriteApplication.ReadShow.ReadInput()'
 			string name;
 			Console.Write("What is your name : ");
 			name = Console.ReadLine(); //ReadKey() produces error
-			ReadShow.ShowName(name);
+			ShowName(name); //ReadShow.ShowName(name);...ok here(for static methods)
 		}
 
 		//Show input data
@@ -24,7 +24,7 @@ namespace ReadWriteApplication{
 		//Driver program
 		static void Main(string[] cmdArgs)
 		{
-			ReadInput(); // ReadShow.ReadInput(); is also ok
+			ReadInput(); //ReadShow.ReadInput(); is also ok
 		}
 	}
 }

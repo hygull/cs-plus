@@ -4,9 +4,9 @@
 	Coded by : Rishikesh Agrawani.
 */
 using System;
-namespace PlacholderApplication{
+namespace PlaceholderApplication{
 	class ReaderWriter{
-		void Reader()
+		void Reader() 
 		{
 			string fname, lname;
 			Console.Write(">>> Enter your firstname:\t");
